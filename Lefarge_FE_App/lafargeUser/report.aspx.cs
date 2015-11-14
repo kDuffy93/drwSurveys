@@ -129,6 +129,7 @@ namespace Lefarge_FE_App.admin
                     var tempHeading = (from h in conn.Headings
                                        where h.Heading_ID == hID
                                        select h).FirstOrDefault();
+                    dr.Cells[4].Text = tempHeading.Heading1.ToString();
                     //Button tempButton = new Button();
                     //tempButton.ID = "btnQid=" + qID + "Hid:" + hID;
                     //tempButton.Text = tempHeading.Heading1;
@@ -165,8 +166,8 @@ namespace Lefarge_FE_App.admin
 
 
 
-                    dr.Cells[7].Controls.Add(hyperlink2);
-                    dr.Cells[8].Controls.Add(hyperlink1);
+                    dr.Cells[6].Controls.Add(hyperlink2);
+                    dr.Cells[7].Controls.Add(hyperlink1);
 
                   
                     

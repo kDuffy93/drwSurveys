@@ -73,7 +73,7 @@ This is what the window will look like where pictures are going to go. Im still 
             <asp:BoundField DataField="Action_plan" HeaderText="Action Plan"/>
              <asp:BoundField DataField="heading_ID" HeaderText="For Heading" />
              <asp:BoundField DataField="Date_Completed" HeaderText="Date Completed"/>
-             <asp:ButtonField CommandName="viewImages"   HeaderText="View Images" />
+           
             <asp:HyperLinkField Target="_blank" />
             <asp:HyperLinkField  Target="_blank" />
         </Columns>
