@@ -25,13 +25,13 @@ namespace Lefarge_FE_App.admin
                 selectDate(EquipmentID);
             }
 
-/*
+
             if (IsPostBack)
             {
 
                 var SelectedIndex = ddlDates.SelectedIndex;
                 selectDate(EquipmentID, SelectedIndex);
-            }*/
+            }
 
 
 
