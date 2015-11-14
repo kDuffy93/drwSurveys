@@ -1,6 +1,6 @@
 ﻿ <%@ Page Title="" Language="C#" MasterPageFile="~/report.Master" AutoEventWireup="true" CodeBehind="tempImages.aspx.cs" Inherits="Lefarge_FE_App.lafargeUser.tempImages" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<asp:DataList runat="server" ItemStyle-BorderColor="Black" RepeatColumns="2"  AlternatingItemStyle-HorizontalAlign="Center" CellPadding="5"   ID="DLTempImage" DataKeyField="ID"  OnItemDataBound="DLTempImage_ItemDataBound">
+<asp:DataList runat="server" ItemStyle-BorderColor="Black" RepeatColumns="2"  AlternatingItemStyle-HorizontalAlign="Center" CellPadding="5"   ItemStyle-Width="800px"  ID="DLTempImage" DataKeyField="ID"  OnItemDataBound="DLTempImage_ItemDataBound">
     <HeaderTemplate>
     <p>Images:</p>
         </HeaderTemplate>
