@@ -6,7 +6,7 @@
         </HeaderTemplate>
 
     <ItemTemplate>
-        <div style="padding-left:5em; border:5px double #29a329; height:700px;" >
+        <div style="padding-left:1em; border:5px double #29a329; height:700px;" >
         <div style="align-items:center;background-color:#66ff66;">
             <asp:Label ID="qID"  Visible="true" runat="server" >Question: <%#Eval("question_ID")%></asp:Label></br>
              <asp:Label  ID="hID" Visible="true" runat="server" >Heading: <%#Eval("heading_ID")%></asp:Label></br>

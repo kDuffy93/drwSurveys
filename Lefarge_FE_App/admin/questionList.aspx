@@ -7,7 +7,7 @@
         AutoGenerateColumns="false" DataKeyNames="Question_ID" OnRowDeleting="grdQuestions_RowDeleting"  >
 
          <Columns>  
-             <asp:BoundField DataField="Question_ID" Visible="false" />
+             <asp:BoundField DataField="Question_ID" HeaderText="ID" Visible="true" />
               <asp:BoundField DataField="Question1" HeaderText="Heading" />
               <asp:BoundField DataField="Headings_Under" HeaderText="Categories Under"/>
             <asp:HyperLinkField HeaderText="Edit" NavigateUrl="question.aspx" 

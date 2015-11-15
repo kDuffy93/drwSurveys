@@ -8,7 +8,8 @@
     <asp:GridView ID="grdHeadings" runat="server" CssClass="table table-striped"
         AutoGenerateColumns="false" OnRowDeleting="grdHeadings_RowDeleting"
         DataKeyNames="Heading_ID">
-        <Columns>        
+        <Columns>   
+            <asp:BoundField DataField="Heading_ID" HeaderText="ID" Visible="true" />  
             <asp:BoundField DataField="Heading1" HeaderText="Heading" />
               <asp:BoundField DataField="Categories_Under" HeaderText="Categories Under"/>
             <asp:HyperLinkField HeaderText="Edit" NavigateUrl="heading.aspx" 
