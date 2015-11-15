@@ -61,7 +61,16 @@ namespace Lefarge_FE_App.lafargeUser
         protected void DLTempImage_ItemDataBound(object sender, DataListItemEventArgs e)
         {
             Image lastImageBound = (Image)e.Item.FindControl("imageContainer");
-           
+            Label lblqID =(Label)e.Item.FindControl("qID");
+            Label lblhID = (Label)e.Item.FindControl("hID");
+          //  int qID = Convert.ToInt32(lblqID.Text);
+           // int hID = Convert.ToInt32(lblhID.Text);
+//Console.Write("qid: " + qID + "  hID: " + hID);
+        }
+
+        protected void imageContainer_DataBinding(object sender, EventArgs e)
+        {
+            Console.Write("databound");
         }
     }
 }
