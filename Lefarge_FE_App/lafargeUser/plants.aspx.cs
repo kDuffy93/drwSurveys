@@ -26,8 +26,8 @@ namespace Lefarge_FE_App
             {
                 GetPlants();
                 btnNewPlant.Visible = false;
-                grdPlants.Columns[5].Visible = false;
                 grdPlants.Columns[6].Visible = false;
+                grdPlants.Columns[7].Visible = false;
             }
         }
           protected void GetPlants()

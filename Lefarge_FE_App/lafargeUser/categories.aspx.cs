@@ -23,9 +23,9 @@ namespace Lefarge_FE_App
             if (User.IsInRole("member"))
             {
                 GetCategories();
-                grdCategories.Columns[1].Visible = false;
                 grdCategories.Columns[2].Visible = false;
-                grdCategories.Columns[0].Visible = true;
+                grdCategories.Columns[3].Visible = false;
+               
                 btnNewCategory.Visible = false;
             }
         }
