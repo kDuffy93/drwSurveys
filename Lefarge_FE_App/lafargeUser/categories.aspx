@@ -10,6 +10,7 @@
         AutoGenerateColumns="false" OnRowDeleting="grdCategories_RowDeleting"
         DataKeyNames="Category_ID">
         <Columns>        
+            <asp:BoundField DataField="Category_ID" HeaderText="ID" />
             <asp:BoundField DataField="Category1" HeaderText="Category" />
             
             <asp:HyperLinkField HeaderText="Edit" NavigateUrl="../admin/category.aspx" 

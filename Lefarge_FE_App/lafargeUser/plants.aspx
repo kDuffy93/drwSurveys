@@ -10,6 +10,7 @@
         AutoGenerateColumns="false" OnRowDeleting="grdPlants_RowDeleting"
         DataKeyNames="Plant_ID">
         <Columns>        
+            <asp:BoundField DataField="Plant_ID" HeaderText="ID" />
             <asp:BoundField DataField="Plant_Name" HeaderText="Plant Name" />
             <asp:BoundField DataField="Address" HeaderText="Address"/>
             <asp:BoundField DataField="Phone_Num" HeaderText="PhoneNum"/>
