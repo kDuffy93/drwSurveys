@@ -10,15 +10,24 @@
 namespace Lefarge_FE_App {
     
     
-    public partial class questionList {
+    public partial class headings {
         
         /// <summary>
-        /// grdQuestions control.
+        /// btnNewHeading control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdQuestions;
+        protected global::System.Web.UI.WebControls.Button btnNewHeading;
+        
+        /// <summary>
+        /// grdHeadings control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView grdHeadings;
     }
 }

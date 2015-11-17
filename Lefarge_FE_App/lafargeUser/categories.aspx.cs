@@ -12,9 +12,21 @@ namespace Lefarge_FE_App
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(User.IsInRole("admin") || User.IsInRole("user"))
+                { 
             if (!IsPostBack)
             {
                 GetCategories();
+            }
+            }
+
+            if (User.IsInRole("member"))
+            {
+                GetCategories();
+                grdCategories.Columns[1].Visible = false;
+                grdCategories.Columns[2].Visible = false;
+                grdCategories.Columns[0].Visible = true;
+                btnNewCategory.Visible = false;
             }
         }
         protected void GetCategories()

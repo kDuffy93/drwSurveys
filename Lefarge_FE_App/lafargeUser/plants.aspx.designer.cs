@@ -10,15 +10,24 @@
 namespace Lefarge_FE_App {
     
     
-    public partial class categories {
+    public partial class listPlants {
         
         /// <summary>
-        /// grdCategories control.
+        /// btnNewPlant control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdCategories;
+        protected global::System.Web.UI.WebControls.Button btnNewPlant;
+        
+        /// <summary>
+        /// grdPlants control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView grdPlants;
     }
 }

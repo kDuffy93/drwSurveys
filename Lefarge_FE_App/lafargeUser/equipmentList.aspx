@@ -3,7 +3,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Equipment List</h1>
 
-    <a  href="equipment.aspx">Add New piece of equipment</a>
+     <asp:Button ID="btnNewEquipment" Text="Add a new Equipment" PostBackUrl="~/admin/equipment.aspx" runat="server" />
 
     <asp:GridView ID="grdEquipment" runat="server" CssClass="table table-striped"
         AutoGenerateColumns="False" OnRowDeleting="grdEquipment_OnRowDeleting"
@@ -16,9 +16,9 @@
             <asp:BoundField DataField="Belt_Type" HeaderText="Belt Type"/>
             <asp:BoundField DataField="Category_ID" HeaderText="Category"/>
             <asp:BoundField   DataField="Plant_ID"  HeaderText="Plant"/>
-            <asp:HyperLinkField HeaderText="Edit" NavigateUrl="plant.aspx" 
+            <asp:HyperLinkField HeaderText="Edit"  NavigateUrl="../admin/equipment.aspx"
                  Text="Edit" DataNavigateUrlFields="Equipment_ID"
-                 DataNavigateUrlFormatString="equipment.aspx?Equipment_ID={0}" />
+                 DataNavigateUrlFormatString="../admin/equipment.aspx?Equipment_ID={0}" />
             <asp:CommandField DeleteText="Delete" ShowDeleteButton="true" HeaderText="Delete" />
         </Columns>
     </asp:GridView>

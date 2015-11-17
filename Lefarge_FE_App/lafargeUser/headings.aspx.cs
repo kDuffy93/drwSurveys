@@ -10,13 +10,23 @@ namespace Lefarge_FE_App
 {
     public partial class headings : System.Web.UI.Page
     {
- 
+
         protected void Page_Load(object sender, EventArgs e)
         {
-          
-            if (!IsPostBack)
+            if (User.IsInRole("admin") || User.IsInRole("user"))
+            {
+                if (!IsPostBack)
+                {
+                    GetHeading();
+                }
+            }
+            if (User.IsInRole("member"))
             {
                 GetHeading();
+                btnNewHeading.Visible = false;
+                grdHeadings.Columns[3].Visible = false;
+                grdHeadings.Columns[4].Visible = false;
+
             }
         }
         protected void GetHeading()

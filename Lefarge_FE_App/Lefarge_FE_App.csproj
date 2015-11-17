@@ -96,14 +96,6 @@
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Obout.Ajax.UI, Version=2.13.925.3, Culture=neutral, PublicKeyToken=24f3c5cea456f322, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\oboutSuite_3.5\bin\Obout.Ajax.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="obout_ImageZoom_NET, Version=1.6.0.4, Culture=neutral, PublicKeyToken=c5bb29a21fa7230b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\oboutSuite_3.5\bin\obout_ImageZoom_NET.dll</HintPath>
-    </Reference>
     <Reference Include="Owin">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
@@ -131,17 +123,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="404.aspx" />
-    <Content Include="admin\categories.aspx" />
+    <Content Include="lafargeUser\categories.aspx" />
     <Content Include="admin\category.aspx" />
     <Content Include="images\captureImage.png" />
     <Content Include="lafargeUser\report.aspx" />
     <Content Include="assignUR.aspx" />
     <Content Include="controls\defrib.ascx" />
     <Content Include="admin\equipment.aspx" />
-    <Content Include="admin\equipmentList.aspx" />
+    <Content Include="lafargeUser\equipmentList.aspx" />
     <Content Include="error.aspx" />
     <Content Include="admin\heading.aspx" />
-    <Content Include="admin\headings.aspx" />
+    <Content Include="lafargeUser\headings.aspx" />
     <Content Include="images\lafarge.jpg" />
     <Content Include="lafargeUser\tempImages.aspx" />
     <Content Include="login.aspx" />
@@ -149,7 +141,7 @@
     <Content Include="admin\main.aspx" />
     <Content Include="admin\plant.aspx" />
     <Content Include="Lefarge.Master" />
-    <Content Include="admin\plants.aspx" />
+    <Content Include="lafargeUser\plants.aspx" />
     <Content Include="Models\drwdata.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>drwdata.edmx</DependentUpon>
@@ -180,7 +172,7 @@
     <Content Include="lafargeUser\default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="admin\question.aspx" />
-    <Content Include="admin\questionList.aspx" />
+    <Content Include="lafargeUser\questionList.aspx" />
     <Content Include="register.aspx" />
     <Content Include="lafargeUser\selectResults.aspx" />
     <Content Include="lafargeUser\startReport.aspx" />
@@ -201,11 +193,11 @@
     <Compile Include="404.aspx.designer.cs">
       <DependentUpon>404.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\categories.aspx.cs">
+    <Compile Include="lafargeUser\categories.aspx.cs">
       <DependentUpon>categories.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\categories.aspx.designer.cs">
+    <Compile Include="lafargeUser\categories.aspx.designer.cs">
       <DependentUpon>categories.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\category.aspx.cs">
@@ -243,11 +235,11 @@
     <Compile Include="admin\equipment.aspx.designer.cs">
       <DependentUpon>equipment.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\equipmentList.aspx.cs">
+    <Compile Include="lafargeUser\equipmentList.aspx.cs">
       <DependentUpon>equipmentList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\equipmentList.aspx.designer.cs">
+    <Compile Include="lafargeUser\equipmentList.aspx.designer.cs">
       <DependentUpon>equipmentList.aspx</DependentUpon>
     </Compile>
     <Compile Include="error.aspx.cs">
@@ -264,11 +256,11 @@
     <Compile Include="admin\heading.aspx.designer.cs">
       <DependentUpon>heading.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\headings.aspx.cs">
+    <Compile Include="lafargeUser\headings.aspx.cs">
       <DependentUpon>headings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\headings.aspx.designer.cs">
+    <Compile Include="lafargeUser\headings.aspx.designer.cs">
       <DependentUpon>headings.aspx</DependentUpon>
     </Compile>
     <Compile Include="lafargeUser\tempImages.aspx.cs">
@@ -353,11 +345,11 @@
     <Compile Include="admin\plant.aspx.designer.cs">
       <DependentUpon>plant.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\plants.aspx.cs">
+    <Compile Include="lafargeUser\plants.aspx.cs">
       <DependentUpon>plants.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\plants.aspx.designer.cs">
+    <Compile Include="lafargeUser\plants.aspx.designer.cs">
       <DependentUpon>plants.aspx</DependentUpon>
     </Compile>
     <Compile Include="lafargeUser\default.aspx.cs">
@@ -403,11 +395,11 @@
     <Compile Include="admin\question.aspx.designer.cs">
       <DependentUpon>question.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\questionList.aspx.cs">
+    <Compile Include="lafargeUser\questionList.aspx.cs">
       <DependentUpon>questionList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\questionList.aspx.designer.cs">
+    <Compile Include="lafargeUser\questionList.aspx.designer.cs">
       <DependentUpon>questionList.aspx</DependentUpon>
     </Compile>
     <Compile Include="register.aspx.cs">

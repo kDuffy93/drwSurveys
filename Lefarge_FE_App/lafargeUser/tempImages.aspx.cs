@@ -72,5 +72,13 @@ namespace Lefarge_FE_App.lafargeUser
         {
             Console.Write("databound");
         }
+
+        
+
+       
+        protected void txtHeadingAndQuestion (int qID, int hID)
+        {
+
+        }
     }
 }

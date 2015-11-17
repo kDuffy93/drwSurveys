@@ -4,7 +4,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Categories</h1>
 
-    <a  href="Category.aspx">Add New Cateogry</a>
+    <asp:Button ID="btnNewCategory" PostBackUrl="~/admin/category.aspx" Text="Add a new Category" runat="server" />
 
     <asp:GridView ID="grdCategories" runat="server" CssClass="table table-striped"
         AutoGenerateColumns="false" OnRowDeleting="grdCategories_RowDeleting"
@@ -12,9 +12,9 @@
         <Columns>        
             <asp:BoundField DataField="Category1" HeaderText="Category" />
             
-            <asp:HyperLinkField HeaderText="Edit" NavigateUrl="category.aspx" 
+            <asp:HyperLinkField HeaderText="Edit" NavigateUrl="../admin/category.aspx" 
                  Text="Edit" DataNavigateUrlFields="Category_ID"
-                 DataNavigateUrlFormatString="category.aspx?Category_ID={0}" />
+                 DataNavigateUrlFormatString="../admin/category.aspx?Category_ID={0}" />
 
             <asp:CommandField DeleteText="Delete" ShowDeleteButton="true" HeaderText="Delete" />
 

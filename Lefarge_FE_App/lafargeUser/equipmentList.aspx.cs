@@ -14,14 +14,20 @@ namespace Lefarge_FE_App
         {
             if (!IsPostBack)
             {
-                if (Request.QueryString.Keys.Count > 0)
+                if (User.IsInRole("admin") || User.IsInRole("user"))
                 {
-                    //we have a url parameter if the count is > 0 so populate the form
 
+
+                    getEquipmentList();
+                }
+                if (User.IsInRole("member"))
+                {
+                    getEquipmentList();
+                    btnNewEquipment.Visible = false;
+                    grdEquipment.Columns[7].Visible = false;
+                    grdEquipment.Columns[8].Visible = false;
 
                 }
-
-                getEquipmentList();
             }
         }
 

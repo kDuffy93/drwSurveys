@@ -3,7 +3,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Heading</h1>
 
-    <a href="heading.aspx">Add New Heading</a>
+  <asp:Button PostBackUrl="~/admin/heading.aspx" ID="btnNewHeading" Text="Add a new Heading" runat="server" />
 
     <asp:GridView ID="grdHeadings" runat="server" CssClass="table table-striped"
         AutoGenerateColumns="false" OnRowDeleting="grdHeadings_RowDeleting"
@@ -12,9 +12,9 @@
             <asp:BoundField DataField="Heading_ID" HeaderText="ID" Visible="true" />  
             <asp:BoundField DataField="Heading1" HeaderText="Heading" />
               <asp:BoundField DataField="Categories_Under" HeaderText="Categories Under"/>
-            <asp:HyperLinkField HeaderText="Edit" NavigateUrl="heading.aspx" 
+            <asp:HyperLinkField HeaderText="Edit" NavigateUrl="../admin/heading.aspx" 
                  Text="Edit" DataNavigateUrlFields="Heading_ID"
-                 DataNavigateUrlFormatString="heading.aspx?Heading_ID={0}" />
+                 DataNavigateUrlFormatString="../admin/heading.aspx?Heading_ID={0}" />
 
             <asp:CommandField DeleteText="Delete" ShowDeleteButton="true" HeaderText="Delete" />
 

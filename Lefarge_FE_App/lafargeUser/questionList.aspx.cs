@@ -12,11 +12,20 @@ namespace Lefarge_FE_App
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            if (User.IsInRole("admin") || User.IsInRole("user"))
+            {
+                if (!IsPostBack)
+                {
+                    getQuestion();
+                }
+            }
+            if (User.IsInRole("member"))
             {
                 getQuestion();
+                btnNewQuestion.Visible = false;
+                grdQuestions.Columns[3].Visible = false;
+                grdQuestions.Columns[4].Visible = false;
             }
-
         }
         protected void getQuestion()
         {

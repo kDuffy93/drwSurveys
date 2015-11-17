@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <h1>Questions</h1>
 
-    <a  href="Question.aspx">Add a New Question</a>
+    <asp:Button ID="btnNewQuestion" Text="Add a new Question" runat="server" />
     <asp:GridView ID="grdQuestions" runat="server" CssClass="table table-striped"
         AutoGenerateColumns="false" DataKeyNames="Question_ID" OnRowDeleting="grdQuestions_RowDeleting"  >
 
@@ -10,11 +10,11 @@
              <asp:BoundField DataField="Question_ID" HeaderText="ID" Visible="true" />
               <asp:BoundField DataField="Question1" HeaderText="Heading" />
               <asp:BoundField DataField="Headings_Under" HeaderText="Categories Under"/>
-            <asp:HyperLinkField HeaderText="Edit" NavigateUrl="question.aspx" 
+            <asp:HyperLinkField HeaderText="Edit" NavigateUrl="../admin/question.aspx" 
                  Text="Edit" DataNavigateUrlFields="Question_ID"
-                 DataNavigateUrlFormatString="question.aspx?Question_ID={0}" />
+                 DataNavigateUrlFormatString="../admin/question.aspx?Question_ID={0}" />
 
-            <asp:CommandField DeleteText="Delete" ShowDeleteButton="true" HeaderText="Delete" />
+            <asp:CommandField DeleteText="Delete"  ShowDeleteButton="true" HeaderText="Delete" />
 
              </Columns>
     </asp:GridView>

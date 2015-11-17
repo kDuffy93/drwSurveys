@@ -15,9 +15,19 @@ namespace Lefarge_FE_App
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-             if (!IsPostBack)
+            if (User.IsInRole("admin") || User.IsInRole("user"))
+            {
+                if (!IsPostBack)
+                {
+                    GetPlants();
+                }
+            }
+            if(User.IsInRole("member"))
             {
                 GetPlants();
+                btnNewPlant.Visible = false;
+                grdPlants.Columns[5].Visible = false;
+                grdPlants.Columns[6].Visible = false;
             }
         }
           protected void GetPlants()

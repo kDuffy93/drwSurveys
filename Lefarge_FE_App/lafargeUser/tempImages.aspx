@@ -11,6 +11,8 @@
             <asp:Label ID="qID"  Visible="true" runat="server" >Question: <%#Eval("question_ID")%></asp:Label></br>
              <asp:Label  ID="hID" Visible="true" runat="server" >Heading: <%#Eval("heading_ID")%></asp:Label></br>
 
+            <asp:TextBox runat="server" id="txtHeadingAndQuestion" OnDataBinding="txtHeadingAndQuestion(<%#Eval("question_ID")%>,<%#Eval("heading_ID")%> )"></asp:TextBox>
+
              <asp:label runat="server" style="color:black;">Equipment NO: <%#Eval("equipment_ID")%></asp:label></br>
 
       
